@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+i {
+  font-size: 4rem;
+}
+
+img {
+  display: none;
+}
+
+.fa-circle {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-fourth {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.col-half {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
