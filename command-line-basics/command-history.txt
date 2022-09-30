@@ -1,0 +1,237 @@
+    1  git branch javascript-custom-methods
+    2  git switch javascript-custom-methods
+    3  git commit -m "Completed javascript-custom-methods"
+    4  git status
+    5  git add javascript-custom-methods
+    6  git status
+    7  git commit -m "Completed javascript-custom-methods"
+    8  git push origin javascript-custom-methods
+    9  git switch main
+   10  git pull origin main
+   11  git branch javascript-this
+   12  git switch javascript-this
+   13  git add javascript-this
+   14  git commit -m "Completed javascript-this"
+   15  git push origin javascript-this
+   16  git switch main
+   17  git pull origin main
+   18  git branch javascript-prototypes
+   19  git switch javascript-prototypes
+   20  git add javascript-prototypes
+   21  git status
+   22  git commit -m "Completed javascript-prototypes"
+   23  git push origin javascript-prototypes
+   24  git switch main
+   25  git pull origin main
+   26  git pull origin main
+   27  git branch javascript-constructors
+   28  git switch javascript-constructors
+   29  git add javascript-constructors
+   30  git status
+   31  git commit -m "Completed javascript-constructors"
+   32  git push origin javascript-constructors
+   33  git switch main
+   34  git pull origin main
+   35  git branch javascript-bank
+   36  git switch javascript-bank
+   37  git add javascript-bank
+   38  git status
+   39  git commit -m "Completed javascript-bank"
+   40  git push origin javascript-bank
+   41  git switch main
+   42  git branch javascript-carousel
+   43  git switch javascript-carousel
+   44  git add javascript-carousel
+   45  git commit -m "Completed javascript-carousel"
+   46  git push origin javascript-carousel
+   47  git status
+   48  git add javascript-carousel
+   49  git commit -m "Carousel loops from last slide to first now"
+   50  git push origin javascript-carousel
+   51  git switch main
+   52  git pull origin main
+   53  git pull origin main
+   54  http https://example.com
+   55  http --verbose https://example.com
+   56  http --verbose https://www.example.com
+   57  https httpie.io/hello
+   58  get https://example.com
+   59  http https://example.com
+   60  http --verbose https://example.com
+   61  git branch http-messages
+   62  git switch http-mesages
+   63  git switch http-messages
+   64  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   65  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   66  http --body GET https://example.com > http-messages/index.html
+   67  git status
+   68  git add http-messages
+   69  git status
+   70  git commit -m "Completed http-messages"
+   71  git push origin http-messages
+   72  git switch main
+   73  git branch javascript-ajax
+   74  git switch javascript-ajax
+   75  git status
+   76  git add javascript-ajax
+   77  git status
+   78  git commit -m "Completed javascript-ajax"
+   79  git push origin javascript-ajax
+   80  git switch main
+   81  git pull origin main
+   82  http 36sYsGrjaRztm46mIJ9bZb9ueryHSnWNx0ZKaqIl
+   83  http https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=36sYsGrjaRztm46mIJ9bZb9ueryHSnWNx0ZKaqIl
+   84  https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=36sYsGrjaRztm46mIJ9bZb9ueryHSnWNx0ZKaqIl
+   85  http https://www.benbrougher.tech/hiker/v1/trails/
+   86  http https://developer.nps.gov/api/v1/activities
+   87  http https://api.adoptapet.com/search/pets_at_shelter?key=A34F48&v=1&output=xml&shelter_id=2342
+   88  http http://example.com
+   89  http https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem
+   90  curl 'https://INSERT-API-KEY-HERE@developer.nps.gov/api/v1/parks?parkCode=acad'
+   91  curl 'https://INSERT-API-KEY-HERE@developer.nps.gov/api/v1/parks?parkCode=acad'
+   92  curl 'https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem'
+   93  http https://api.adoptapet.com/search/pets_at_shelter?key=A34F48&v=1&output=xml&shelter_id=2342
+   94  http curl -X GET "https://developer.nps.gov/api/v1/activities?api_key=kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem" -H "accept: applicatio
+   95  curl -X GET "https://developer.nps.gov/api/v1/activities?api_key=kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem" -H "accept: application/json"
+   96  git status
+   97  http https://api.adoptapet.com/search/pets_at_shelters?key=A34F48&v=1&output=xml&shelter_id=2342&shelter_id=17293&shelter_id=8323
+   98  http https://api.adoptapet.com
+   99  http https://api.adoptapet.com/search/pets_at_shelters?key=A34F48&v=1&output=xml
+  100  curl -d "grant_type=client_credentials&client_id={CLIENT-ID}&client_secret={CLIENT-SECRET}" https://api.petfinder.com/v2/oauth2/token
+  101  curl -d "grant_type=client_credentials&client_id={lrIvJKC37PhgryEYgFUXTsidwipBte3EfxgMLaFS9e72TYnSZK}&client_secret={ymrVJh61BLwFssZiHXMxm1qr7QdeTAnzZLjx2zaa}" https://api.petfinder.com/v2/oauth2/token
+  102  curl -d "grant_type=client_credentials&client_id={lrIvJKC37PhgryEYgFUXTsidwipBte3EfxgMLaFS9e72TYnSZK}&client_secret={ymrVJh61BLwFssZiHXMxm1qr7QdeTAnzZLjx2zaa}" https://api.petfinder.com/v2/oauth2/token
+  103  curl -d "grant_type=client_credentials&client_id=lrIvJKC37PhgryEYgFUXTsidwipBte3EfxgMLaFS9e72TYnSZK&client_secret=ymrVJh61BLwFssZiHXMxm1qr7QdeTAnzZLjx2zaa" https://api.petfinder.com/v2/oauth2/token
+  104  http GET https://api.petfinder.com/v2/animals
+  105  http https://api.petfinder.com/v2/animals
+  106  curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJsckl2SktDMzdQaGdyeUVZZ0ZVWFRzaWR3aXBCdGUzRWZ4Z01MYUZTOWU3MlRZblNaSyIsImp0aSI6IjdmNmQ3ZjczZjkwOWYzNzk4YzU5NjBhNDM2NjljZDE4ZGQwYWJjZTNkMmY1ZDYzZjBmZjY2Mzg4MmE5ZWYwMjhjNmM0ZjkwMDE5YjA1OWFhIiwiaWF0IjoxNjYyNjgzOTcyLCJuYmYiOjE2NjI2ODM5NzIsImV4cCI6MTY2MjY4NzU3Miwic3ViIjoiIiwic2NvcGVzIjpbXX0.fqanm-aXwuznM_sLZTruU-naYoKbtFc7tAqSkoAFKgwcNy34CS27HQf3O8ejZXXMBpG6JuO6VF9W21Plg0lx8bzkoTh9lGLTSJDzTymv3dIXdzR7dJf4uipAk-Ezqms0vmbsg8OoUHDCF_5-dPos12-s7okm_aADnqICLynEI1ixn_E6i9AMz7Rfn1FYt0SRgZ40WHvgYaEzibA_ovY8qH-2UkxA2x8gQ7N8QED0gEaa5CutvUJ8t3ln6xGCS8CtqIz-DCXFN0diljpvroC1W1pqS8UjCUVhwtQyaNBdZTr712G89pfTwmVAmWJhMCvyifO5kVk5MtYMwN73sq4VeQ"https://api.petfinder.com/v2/animals?type=dog&page=2
+  107  curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJsckl2SktDMzdQaGdyeUVZZ0ZVWFRzaWR3aXBCdGUzRWZ4Z01MYUZTOWU3MlRZblNaSyIsImp0aSI6IjdmNmQ3ZjczZjkwOWYzNzk4YzU5NjBhNDM2NjljZDE4ZGQwYWJjZTNkMmY1ZDYzZjBmZjY2Mzg4MmE5ZWYwMjhjNmM0ZjkwMDE5YjA1OWFhIiwiaWF0IjoxNjYyNjgzOTcyLCJuYmYiOjE2NjI2ODM5NzIsImV4cCI6MTY2MjY4NzU3Miwic3ViIjoiIiwic2NvcGVzIjpbXX0.fqanm-aXwuznM_sLZTruU-naYoKbtFc7tAqSkoAFKgwcNy34CS27HQf3O8ejZXXMBpG6JuO6VF9W21Plg0lx8bzkoTh9lGLTSJDzTymv3dIXdzR7dJf4uipAk-Ezqms0vmbsg8OoUHDCF_5-dPos12-s7okm_aADnqICLynEI1ixn_E6i9AMz7Rfn1FYt0SRgZ40WHvgYaEzibA_ovY8qH-2UkxA2x8gQ7N8QED0gEaa5CutvUJ8t3ln6xGCS8CtqIz-DCXFN0diljpvroC1W1pqS8UjCUVhwtQyaNBdZTr712G89pfTwmVAmWJhMCvyifO5kVk5MtYMwN73sq4VeQ" https://api.petfinder.com/v2/animals?type=dog&page=2
+  108  HTTP Header
+  109  curl -H 'X-Api-Key: kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem' 'https://developer.nps.gov/api/v1/parks?parkCode=acad'
+  110  GET Query Parameter
+  111  curl 'https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem'
+  112  HTTP Basic Auth Username
+  113  curl 'https://kbmlMPSL0JXxorIzYnyhwxHUJw9qIevdqnZlqsem@developer.nps.gov/api/v1/parks?parkCode=acad'
+  114  GET https://api.petfinder.com/v2/animals
+  115  curl -d "grant_type=client_credentials&client_id=lrIvJKC37PhgryEYgFUXTsidwipBte3EfxgMLaFS9e72TYnSZK&client_secret=ymrVJh61BLwFssZiHXMxm1qr7QdeTAnzZLjx2zaa" https://api.petfinder.com/v2/oauth2/token
+  116  curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJsckl2SktDMzdQaGdyeUVZZ0ZVWFRzaWR3aXBCdGUzRWZ4Z01MYUZTOWU3MlRZblNaSyIsImp0aSI6IjBiYWM0YzkyZmRkZjhkZjUyMmZmMGYzMjU3YTVlNmVhNmYzZjgwMDJiM2JkYTM3ODc4OGVlMDk0MjYyNDk5Y2Y4NWUzMDdjZGE5YTZjZmFjIiwiaWF0IjoxNjYyNjg0NzUyLCJuYmYiOjE2NjI2ODQ3NTIsImV4cCI6MTY2MjY4ODM1Miwic3ViIjoiIiwic2NvcGVzIjpbXX0.PXa7EJmg9GOPp0k-JTXIhOKiq73hJ2veFZXPJxMDkXOJq1Rq5ROklf0dReNCFrNZpW78qdJskxbO8ljX29zOCJWcSyBLGYXgWU7xtOpfCyBOy_qOEnD6d8J_keQTYqOYHZGyDVTMVJgmQAQ_-AOi-tMvMq-A4lMbmLyhFdqXcSd938F3B5QX--4e817TOkgCO_OLqm72dsSjORM_ch6xNQWSrum8a1LAXdIqnLvcWzctDyDg2FVjEJqP20fzrmLkvaIN_Hp3xKXAy-dBPusBds1hlzlZmfZqcyfmtUQKdtiguUV4E6ZLbElRSsAjv1RZ__srX7Y4YZaaEpJe2Ec-Ng" https://api.petfinder.com/v2/animals?type=dog
+  117  http https://cat-fact.herokuapp.com
+  118  http https://ghibliapi.herokuapp.com/films
+  119  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  120  git status
+  121  git branch es6-const-let
+  122  git switch es6-const-let
+  123  git status
+  124  git add es6-const-let
+  125  git commit -m "Completed es6-const-let exercise"
+  126  git push origin es6-const-let
+  127  git switch main
+  128  git branch es6-template-literals
+  129  git switch es6-template-literals
+  130  git add es6-template-literals
+  131  git commit -m "Completed es6-template-literals exercise"
+  132  git push origin es6-template-literals
+  133  git switch main
+  134  git branch es6-destructuring
+  135  git switch es6-destructuring
+  136  git add es6-destructuring
+  137  git commit -m "Completed es6-destructuring exercise"
+  138  git push origin es6-destructuring
+  139  git switch main
+  140  git switch es6-template-literals
+  141  git add es6-template-literals
+  142  git commit -m "Missed a concatenation"
+  143  git push origin es6-template-literals
+  144  git switch main
+  145  git branch es6-arrow-functions
+  146  git switch es6-arrow-functions
+  147  git add es6-arrow-functions
+  148  git commit -m "Completed es6-arrow-functions"
+  149  git push origin es6-arrow-functions
+  150  git switch main
+  151  git pull origin main
+  152  git pull origin main
+  153  git branch command-line-basics
+  154  git switch command-line-basics
+  155  cd command-line-basics
+  156  cd command-line-basics
+  157  man man
+  158  man cat
+  159  cat laziness.txt
+  160  cat impatience.txt
+  161  cat hubris.txt
+  162  man cat
+  163  cat laziness.txt impatience.txt hubris.txt
+  164  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  165  man ls
+  166  ls
+  167  ls -a
+  168  ls -b
+  169  ls -c
+  170  ls -d
+  171  ls -e
+  172  ls -f
+  173  ls -F
+  174  ls -A
+  175  ls -aF lfz-staff
+  176  ls -aF kill-me
+  177  ls -aF lfz-staff > lfz-staff/contents.txt
+  178  cat lfz-staff/contents.txt
+  179  cd lfz-staff
+  180  cat contents.txt
+  181  cd command-line-basics
+  182  pwd
+  183  man pwd
+  184  cd main
+  185  cd command-line-basics
+  186  cd ..
+  187  pwd
+  188  pwd > i-was-here.txt
+  189  cat i-was-here.txt
+  190  ls
+  191  man echo
+  192  echo 'Hello, World!'
+  193  echo 'Hello, World!' > hello.txt
+  194  ls
+  195  cat hello.txt
+  196  man touch
+  197  touch tag-youre-it.txt
+  198  man touch
+  199  touch snoot/boop.txt
+  200  ls snoot
+  201  man mkdir
+  202  mkdir parent
+  203  ls
+  204  man mkdir
+  205  mkdir -p
+  206  mkdir -p parent/child/grandchild
+  207  touch parent/child/grandchild/.gitkeep
+  208  ls -a
+  209  ls -a parent/child/grandchild
+  210  man mv
+  211  man mv
+  212  man mv
+  213  man pokiemans pokemon
+  214  man pokemon pokiemans
+  215  man mv
+  216  man pokiemans pokemon
+  217  ls
+  218  man pokiemans/ pokemon/
+  219  mv pokiemans pokemon
+  220  ls
+  221  man rm
+  222  man rm
+  223  cat lol.txt
+  224  rm lol.txt
+  225  ls
+  226  ls -a kill-me
+  227  rm -r kill-me/
+  228  ls
+  229  man cp
+  230  man cp
+  231  cp and-then.txt no-and-then.txt
+  232  cp and-then.txt
+  233  ls
+  234  cat and-then.txt no-and-then.txt
+  235  history
+  236  man history
+  237  history > command-history.txt
