@@ -23,18 +23,17 @@ app.get('/api/notes', (req, res) => {
 // Clients can GET a single note by id
 app.get('/api/notes/:id', (req, res) => {
   if (req.params.id <= 0 || isNaN(req.params.id)) {
-    res.status(400).json({ error: 'id must use a positive integer ' });
+    res.status(400).json({ error: 'id must be a positive integer ' });
   } else if (data.notes[req.params.id]) { // note w/ specified id exists
     res.status(200).json(data.notes[req.params.id]); // json OBJECT representing note w/ id -- not array
   } else {
-    res.status(404).json({ error: `there is no note with id ${req.params.id}` });
+    res.status(404).json({ error: `cannot find note with id ${req.params.id}` });
   }
 });
 // http -v get localhost:3000/api/notes/2
 
 // Clients can POST a new note
 app.post('/api/notes', (req, res) => {
-  // does not include content property in req.body
   if (req.body.content === undefined) {
     res.status(400).json({ error: 'content is a required field' });
   } else {
@@ -45,10 +44,10 @@ app.post('/api/notes', (req, res) => {
     data.notes[data.nextId] = newEntry;
     data.nextId++;
     fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
-      if (err) { // content is present but note is not recorded
+      if (err) {
         res.status(500).json({ error: 'an unexpected error occured' });
       } else {
-        res.status(201).json(newEntry); // created note w/ id as JSON object
+        res.status(201).json(newEntry);
       }
     });
   }
@@ -58,9 +57,9 @@ app.post('/api/notes', (req, res) => {
 // Clients can DELETE a note by id
 app.delete('/api/notes/:id', (req, res) => {
   if (req.params.id <= 0 || isNaN(req.params.id)) {
-    res.status(400).json({ error: 'id must use a positive integer ' });
+    res.status(400).json({ error: 'id must be a positive integer ' });
   } else if (!data.notes[req.params.id]) {
-    res.status(404).json({ error: 'matching note for id does not exist' });
+    res.status(404).json({ error: `cannot find note with id ${req.params.id}` });
   } else {
     delete data.notes[req.params.id];
     fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
@@ -73,3 +72,25 @@ app.delete('/api/notes/:id', (req, res) => {
   }
 });
 // http -v delete localhost:3000/api/notes/10
+
+// Clients can replace a note (PUT) by id
+app.put('/api/notes/:id', (req, res) => {
+  if (req.params.id <= 0 || isNaN(req.params.id)) {
+    res.status(400).json({ error: 'id must use a positive integer' });
+  } else if (req.body.content === undefined) {
+    res.status(400).json({ error: 'content is a required field' });
+  } else if (!data.notes[req.params.id]) {
+    res.status(404).json({ error: `cannot find note with id ${req.params.id}` });
+  } else {
+    data.notes[req.params.id].content = req.body.content;
+    data.notes[req.params.id].id = Number(req.params.id);
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
+      if (err) {
+        res.status(500).json({ error: 'an unexpected error occured' });
+      } else {
+        res.status(200).json(data.notes[req.params.id]);
+      }
+    });
+  }
+});
+// http -v put localhost:3000/api/notes/10 content="trolololol"
