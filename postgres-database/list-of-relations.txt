@@ -1,0 +1,20 @@
+          List of relations
+ Schema |    Name     | Type  | Owner 
+--------+-------------+-------+-------
+ public | actors      | table | dev
+ public | addresses   | table | dev
+ public | castMembers | table | dev
+ public | cities      | table | dev
+ public | countries   | table | dev
+ public | customers   | table | dev
+ public | filmGenre   | table | dev
+ public | films       | table | dev
+ public | genres      | table | dev
+ public | inventory   | table | dev
+ public | languages   | table | dev
+ public | payments    | table | dev
+ public | rentals     | table | dev
+ public | staff       | table | dev
+ public | stores      | table | dev
+(15 rows)
+
