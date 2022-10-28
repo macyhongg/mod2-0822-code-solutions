@@ -22,7 +22,7 @@ app.get('/api/notes', (req, res) => {
 
 // Clients can GET a single note by id
 app.get('/api/notes/:id', (req, res) => {
-  if (req.params.id <= 0 || isNaN(req.params.id)) {
+  if (req.params.id <= 0 || !Number.isInteger(Number(req.params.id))) {
     res.status(400).json({ error: 'id must be a positive integer ' });
   } else if (data.notes[req.params.id]) { // note w/ specified id exists
     res.status(200).json(data.notes[req.params.id]); // json OBJECT representing note w/ id -- not array
@@ -56,7 +56,7 @@ app.post('/api/notes', (req, res) => {
 
 // Clients can DELETE a note by id
 app.delete('/api/notes/:id', (req, res) => {
-  if (req.params.id <= 0 || isNaN(req.params.id)) {
+  if (req.params.id <= 0 || !Number.isInteger(Number(req.params.id))) {
     res.status(400).json({ error: 'id must be a positive integer ' });
   } else if (!data.notes[req.params.id]) {
     res.status(404).json({ error: `cannot find note with id ${req.params.id}` });
@@ -75,7 +75,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // Clients can replace a note (PUT) by id
 app.put('/api/notes/:id', (req, res) => {
-  if (req.params.id <= 0 || isNaN(req.params.id)) {
+  if (req.params.id <= 0 || !Number.isInteger(Number(req.params.id))) {
     res.status(400).json({ error: 'id must use a positive integer' });
   } else if (req.body.content === undefined) {
     res.status(400).json({ error: 'content is a required field' });
