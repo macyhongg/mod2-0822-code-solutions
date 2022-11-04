@@ -1,0 +1,1 @@
+-- "invetory" only contains inventoryId and filmId?
